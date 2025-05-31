@@ -1,0 +1,100 @@
+/* Assignment 4: Write a JavaScript program to add items to favorites from the drop down list. If you select any item that should be added to the list and be displayed on the ui, if you click on the added item again then it should not add the same item again. */
+:root{
+    --gradient1: linear-gradient(180deg,#ec9006 0%, #ee9f27 100%);
+    --white: #f9ddb1;
+    --dark: #d24e01;
+    --containerBG1: #f1b04c;
+    --containerBG2: #e27602;
+
+}
+
+body{
+    background: var(--gradient1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0;
+}
+
+.container{
+    background-color: var(--containerBG1);
+    height: 70%;
+    width: 50%;
+    border-radius: 2rem;
+    max-width: 40rem;
+    box-shadow: 0rem 1rem 3rem 1rem var(--dark);
+    margin: 0;
+    padding: 2rem;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--dark);
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    color: var(--dark);
+    outline: none;
+    font-weight: bold;
+}
+select option{
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+}
+
+select option:hover{
+    background-color: #f1b04c;
+}
+
+select:focus {
+    border-color: var(--containeerBG2);
+    box-shadow: 0 0.1rem 0.3rem 0.1rem var(--dark);
+    border-radius: 0.5rem;
+}
+
+button {
+    width: 3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid var(--dark);
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    color: var(--dark);
+    outline: none;
+}
+
+.selectedFoods{
+    color: black;
+    font-weight: bold;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    align-items: center;
+    overflow-y: scroll;
+}
+.selectedFoods::-webkit-scrollbar{
+    appearance: none;
+}
+ul{
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
+}

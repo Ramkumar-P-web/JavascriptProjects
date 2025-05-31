@@ -1,0 +1,225 @@
+:root{
+    --gradient1: linear-gradient(180deg, #A8A7A7 15%,#cc527a 40%, #e8175d 70%,#474747 90%,#363636 100%)
+}
+
+.orbitron-font {
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body{
+    background: var(--gradient1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .appName{
+    font-size: 3.5rem;
+    color: #e8175d;
+    margin: 0rem;
+    /* position: relative;
+    top: 1rem;
+    right: 1rem; */
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .Maincontainer{
+    width: 50%;
+    max-width: 35rem;
+    max-height: 60%;
+    background-color: #cc527b8a;
+    border-radius: 3rem;
+    margin: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow: 0rem 0.5rem 1rem 0.5rem #474747;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+.Maincontainer h2{
+  color: #363636;
+}
+
+
+  .addTaskBtn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    /* font-size: 2rem; */
+    background-color: #e8175d;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    transition: transform 0.5s ease-in-out;
+  }
+.addTaskBtn:hover{
+  box-shadow:  0px 8px 15px #d8d7d7;
+}
+.addTaskBtn svg{
+  width: 110%;
+  height: 110%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.addTaskBtn:hover svg{
+  transform: rotate(180deg);
+}
+
+.taskcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  padding: 2rem;
+  padding-top: 5rem;
+  position: relative;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+
+}
+
+.taskcontainer::-webkit-scrollbar{
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.3rem 0.3rem;
+  background-color: #a8a7a7;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.task p{
+  margin: 0.2rem;
+  padding: 0;
+  font-family: "Tinos", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:#2c2c2c;
+}
+
+.task span{
+  margin: 0;
+  padding: 0;
+  font-family: "Tinos", serif;
+}
+
+.task button{
+  border: none;
+  outline: none;
+  background-color: #e8175d;
+  color: #f8f2f4;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  cursor: pointer;
+  margin: 0 0.3rem;
+}
+
+.task button svg{
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.task button:hover{
+  background-color: #f8f2f4;
+  transform: scale(1.2);
+  color: #e8175d;
+}
+
+.delBtn{
+  position: absolute;
+  top: 0.3rem;
+  right: 2.3rem;
+}
+.editBtn{
+  position: absolute;
+  top: 0.3rem;
+  right: 0.1rem;
+}
+/* .addEditTasks{
+  background-color: #705f6583;
+} */
+.addTask ,.editTask{
+  display: none;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: #a0546d83;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskInputText , .editTaskText{
+    width: 50%;
+    height: 6%;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    background-color: #f3f0f0;
+    margin-left: 15rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: "Tinos", serif;
+    font-weight: bold;
+    color: #2c2c2c;
+} 
+
+#addBtn, #editTaskTextBtn{
+  width: 8rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: #e8175d;
+  color: antiquewhite;
+  transition: transform 0.5s ease-in-out;
+  margin-right: 15rem;
+  margin-left: 0;
+  padding: 0;
+  font-size: 1rem;
+    /* font-family: "Tinos", serif; */
+    font-family: "Orbitron", serif;
+    font-weight: bold;
+}
+
+#addBtn:hover, #editTaskTextBtn:hover{
+  box-shadow: 0px 8px 15px #d8d7d7;
+}

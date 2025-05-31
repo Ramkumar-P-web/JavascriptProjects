@@ -1,0 +1,45 @@
+<!-- Assignment 5: Write a JavaScript program to highlight the word with more than 5 characters with green background. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Word!</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(
+                180deg,
+                white 0%,
+                green 100%
+            );
+        }
+        .container{
+            background-color: palegreen;
+            border-radius: 3rem;
+            max-width: 50rem;
+            width: 50%;
+            height: 60%;
+            padding: 2rem;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0rem 0.5rem 0.9rem 0.5rem powderblue;
+            position: relative;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+<p id="para">Assignment 5: Write a JavaScript program to highlight the word with more than 5 characters with green background. Try to solve? it yourself - IDE Link
+     Solution Link!!     Solution Solution Solution</p><button id="change" onclick="changeBG()">Change BGcolor</button>
+    </div>
+</body>
+<script src="assignment_5.js"></script>
+</html>

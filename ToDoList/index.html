@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <section class="todo" id="todo" > 
+        <h1>To-do List</h1>
+        <div class="input">
+            <!-- #input field + #button -->
+            <input type="text" class="input-field" placeholder="Add New Todo" id="todoInput" >
+            <button class="btn-add" id="btn-add">Add</button>
+        </div>
+        
+        <ul class="scroll">
+            <li id="todoList"></li>
+        </ul>
+
+        <div class="counter">
+            <hr>
+            <div class="counter-container">
+            <p><span id="todoCount">0 </span> Items Total</p>
+            <button id="btn-del">Delete ALL</button>
+        </div>
+        </div>
+    
+</section>
+    <footer>
+        <p>Made by </p><p class="author">Ramkumar</p>
+    </footer>
+</body>
+<script src="TodoList.js"></script>
+</html>

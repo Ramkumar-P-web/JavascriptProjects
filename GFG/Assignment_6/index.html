@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Assignment 6: Given a table with 3 rows and 3 columns Write a JavaScript program to add a row and every click on button. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add_Table_Row</title>
+    <style>
+        table{
+            border: 0.1rem solid black;
+            border-collapse: collapse;
+        }
+        th{
+            border: 0.1rem solid black;  
+        }
+        td{
+            border: 0.1rem solid black;  
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+<thead>
+    <th>Every</th>
+    <th>CLick</th>
+    <th>Add</th>
+    <th>New_Row</th>
+</thead>
+<tbody id="tBody">
+    <tr>
+        <td>Row1</td>
+        <td>Row1</td>
+        <td>Row1</td>
+        <td>Row1</td>
+    </tr>
+    <tr>
+        <td>Row2</td>
+        <td>Row2</td>
+        <td>Row2</td>
+        <td>Row2</td>
+    </tr>
+    <tr>
+        <td>Row3</td>
+        <td>Row3</td>
+        <td>Row3</td>
+        <td>Row3</td>
+    </tr>
+    <tr>
+        <td>Row4</td>
+        <td>Row4</td>
+        <td>Row4</td>
+        <td>Row4</td>
+    </tr>
+</tbody>
+    </table>
+    <button id="AddBtn" onclick="Add_Row()">Add_Row</button>
+</body>
+<script src="Assignment.js"></script>
+</html>

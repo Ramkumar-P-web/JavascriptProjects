@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content= 
+    "width=device-width, initial-scale=1.0" /> 
+  <title>GeeksforGeeks</title>
+  <style>
+    body { 
+  margin: 0; 
+  padding: 0; 
+  background: green; 
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:  center;
+  
+  
+}
+h1{
+  color: white;
+  text-align: center;
+}
+
+.productsList{
+background-color: #eeeeee;
+width:50%;
+height:60%;
+display:flex;
+flex-direction:column;
+justify-content: space-arround;
+padding: 2rem;
+border-radius: 2rem;
+position: relative;
+}
+
+#uList{
+position:absolute;
+display:flex;
+flex-direction: column;
+justify-content: space-arround;
+margin: 0;
+padding: 1rem;
+align-items:center;
+
+
+
+}
+ul{
+list-style-type:none;
+}
+  </style> 
+</head> 
+
+<body> 
+  <div class="geeks"><h1>Hello Geek!</h1></div> 
+  <div class=""productsList">
+  <ul id="uList">
+  <li id="listItems"></li>
+  </ul>
+  </div>
+</body> 
+<script>const uList = document.getElementById("uList");
+    let products = [
+      {
+        id: "1",
+        item: "Shirt"
+      },
+      {
+        id: "2",
+        item: "Jeans"
+      },
+      {
+        id: "3",
+        item: "T-shirt"
+      },
+      {
+        id: "4",
+        item: "Denim Jacket"
+      },
+      {
+        id: "5",
+        item: "Casual Shoes"
+      }
+    ];
+    
+    const listItems = document.getElementById("listItems");
+    
+    products.forEach((item, index) => {
+      // Create the container for each product item
+      let p = document.createElement('p');
+      
+      // Set the inner HTML for the product and delete button
+      p.innerHTML = `${item.id}. ${item.item} <button id="deleteBTN-${index}">Remove</button>`;
+    
+      // Add event listener to the delete button
+      const deleteButton = document.getElementById(`deleteBTN-${index}`);
+      deleteButton.addEventListener('click', () => {
+        // Remove the paragraph element containing the item
+        p.remove();
+      });
+    
+      // Append the new paragraph element to the list
+      listItems.appendChild(p);
+    });
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
