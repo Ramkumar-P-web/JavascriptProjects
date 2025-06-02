@@ -8,8 +8,6 @@ This repository contains a collection of JavaScript-based projects and assignmen
 
 ├── calculator/
 ├── todo-app/
-├── dom-practice/
-├── async-await-demo/
 ├── weather-app/
 
 Each folder includes:
