@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display{
+    width: 95%;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    color: #fff;
+}
+
+
+.calculator input[type="button"]{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.calculator input[type="button"]:hover{
+    box-shadow: -8px -8px 15px #e3f9ff25,5px 5px 15px #3ccdf531;
+}
+
+/* If we use class name qual means it will over ride the above Propertie values */
+#equal {
+    width: 145px;
+    height: 60px;
+}
+
+.calBtn{
+    color: rgb(7, 247, 195) !important;
+}
