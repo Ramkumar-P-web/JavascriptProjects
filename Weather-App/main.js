@@ -1,5 +1,6 @@
-const apiKey = "dc3672873f360f852d514dde39997e0b";
+let apiKey = "Your_API_KEY";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q="
+
 
 const input = document.querySelector('.search input');
 const searchBtn = document.querySelector('.search button');
@@ -10,6 +11,8 @@ const weather = document.querySelector('.weather');
 
 
 async function currentWeather(cityName){
+      
+     await fetch('./config.json').then(res=> res.json()).then(config => apiKey = config.apiKey);
      const weatherReport = await fetch(apiUrl+`${cityName}`+`&appid=${apiKey}`+`&units=metric`);
     
      if(weatherReport.status == 404){
