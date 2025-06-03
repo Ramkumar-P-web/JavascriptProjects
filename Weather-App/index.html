@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button title="searchBtn"><img src="images/search.svg" alt="searchIcon"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="home">
+            <img src="images/weather-forecast.gif" alt="weather-forecast">
+            <h1>Weather</h1>
+            <h2>ForeCasts</h2>
+            <button><h2>Get Started</h2></button>
+        </div>
+        <div class="weather">
+            <img id="weatherImg" src="images/cloudy.gif" alt="weatherIcon">
+            <p id="description">-----</p>
+            <div class="temp">
+                <h1>--</h1>
+                <img src="images/celsius.gif" alt="celsiusIcon">
+            </div>
+            <h2 id="cityname">------</h2>
+            <div class="details">
+            <div class="humidity">
+                <img src="images/humidity.gif" alt="humidityIcon">
+                <div class="sensexH">
+                    <P id="humidityper">-- %</P>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <img src="images/wind.gif" alt="windIcon">
+                <div class="sensexW">
+                    <p id="windspeed">--- M/S</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+</body>
+<script type="module" src="main.js"></script>
+</html>
