@@ -18,21 +18,31 @@
     background: #3a4452;
     padding: 20px;
     border-radius: 10px;
+    max-width: 40%;
+    width: 380px;
 }
 
 .display{
-    width: 95%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.calculator input[type="text"]{
+    max-width: 100%;
     height: 80px;
     border: none;
     outline: none;
     border-radius: 10px;
     margin-bottom: 10px;
     text-align: right;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 40px;
+    /* font-weight: 500; */
     background: transparent;
     color: #fff;
 }
+
 
 
 .calculator input[type="button"]{
@@ -50,8 +60,10 @@
     transition: 0.5s;
 }
 
-.calculator input[type="button"]:hover{
-    box-shadow: -8px -8px 15px #e3f9ff25,5px 5px 15px #3ccdf531;
+
+
+.calculator input[type="button"]:active{
+    box-shadow: -8px -8px 15px #24caf83a,5px 5px 15px #3ccdf531;
 }
 
 /* If we use class name qual means it will over ride the above Propertie values */
@@ -62,4 +74,8 @@
 
 .calBtn{
     color: rgb(7, 247, 195) !important;
+}
+
+.calBtn:active{
+     box-shadow: -8px -8px 15px rgba(2, 248, 228, 0.15),5px 5px 15px rgba(7, 247, 195, 0.3) !important;
 }

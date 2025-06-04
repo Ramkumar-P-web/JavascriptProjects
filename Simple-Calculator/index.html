@@ -12,40 +12,54 @@
     <div class="container">
         <div class="calculator">
             <form>
-                <div></div>
-                <input type="text" title="display" name="display" class="display">
-                <div>
-                    <input type="button"  value="AC" class="calBtn">
-                    <input type="button"  value="DE" class="calBtn">
-                    <input type="button"  value="."  class="calBtn">
-                    <input type="button"  value="/"  class="calBtn">
+                <div class="display">
+                    <input type="text" title="display" name="display">
                 </div>
                 <div>
-                    <input type="button"  value="7">
-                    <input type="button"  value="8">
-                    <input type="button"  value="9">
-                    <input type="button"  value="x" class="calBtn">
-                     <!-- if it's not woring use * -->
+                    <input type="button"  value="AC" class="calBtn" onclick="display.value = ''">
+                    <input type="button"  value="DE" class="calBtn" onclick="display.value = display.value.slice(0,-1)">
+                    <input type="button"  value="."  class="calBtn" onclick="display.value += '.'">
+                    <input type="button"  value="/"  class="calBtn" onclick="display.value += '/'">
                 </div>
                 <div>
-                    <input type="button"  value="4">
-                    <input type="button"  value="5">
-                    <input type="button"  value="6">
-                    <input type="button"  value="-" class="calBtn">
+                    <input type="button"  value="7" onclick="display.value += '7'">
+                    <input type="button"  value="8" onclick="display.value += '8'">
+                    <input type="button"  value="9" onclick="display.value += '9'">
+                    <input type="button"  value="*" class="calBtn" onclick="display.value += '*'">
+                     <!-- x it's not woring use * -->
                 </div>
                 <div>
-                    <input type="button"  value="1">
-                    <input type="button"  value="2">
-                    <input type="button"  value="3">
-                    <input type="button"  value="+" class="calBtn">
+                    <input type="button"  value="4" onclick="display.value += '4'">
+                    <input type="button"  value="5" onclick="display.value += '5'">
+                    <input type="button"  value="6" onclick="display.value += '6'">
+                    <input type="button"  value="-" class="calBtn" onclick="display.value += '-'">
                 </div>
                 <div>
-                    <input type="button"  value="00">
-                    <input type="button"  value="0">
-                    <input type="button"  value="=" id="equal" class="calBtn">
+                    <input type="button"  value="1" onclick="display.value += '1'">
+                    <input type="button"  value="2" onclick="display.value += '2'">
+                    <input type="button"  value="3" onclick="display.value += '3'">
+                    <input type="button"  value="+" class="calBtn" onclick="display.value += '+'">
+                </div>
+                <div>
+                    <input type="button"  value="00" onclick="display.value += '00'">
+                    <input type="button"  value="0" onclick="display.value += '0'">
+                    <input type="button"  value="=" id="equal" class="calBtn" onclick="calculate()">
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script>
+         const display = document.querySelector('.display input');
+         const parser = new exprEval.Parser();
+         function calculate(){
+            try {
+                display.value = parser.evaluate(display.value);
+            } catch (error) {
+                display.value = "invalid entry!"
+                setTimeout(()=>{display.value = ""},2000);
+            }
+               
+         }
+</script>
 </html>
