@@ -1,0 +1,1 @@
+A collection of beginner to intermediate JavaScript projects created for hands-on practice. Each project focuses on core concepts like DOM manipulation, event handling, and interactive UI features to strengthen JavaScript fundamentals.
