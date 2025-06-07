@@ -1,4 +1,115 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.keyboard{
+    padding: 10px 0;
+    max-width: 50%;
+    max-height: 50%;
+    background: burlywood;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    background: brown;
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.key:active{  
+  transform: scale(0.95);
+}
+
+
+.wide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 40px;
+    background: teal;
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wide:active{  
+  transform: scale(0.95);
+}
+
+.wideCE{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: teal;
+    width: 80px;
+    height: 40px;
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wideCE:active{  
+  transform: scale(0.95);
+}
+
+.wideS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: teal;
+    width: 100px;
+    height: 40px;
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wideS:active{  
+  transform: scale(0.95);
+}
+
+.extra-wide{
+    background: skyblue;
+    background: teal;
+    width: 350px;
+    height: 40px;
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.extra-wide:active{  
+  transform: scale(0.95);
 }
