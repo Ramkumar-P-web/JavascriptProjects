@@ -6,16 +6,83 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100vh;
+    background: #A2A2A2;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(66, 66, 66);
+}
+
+.navbar{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 7%;
+    background: #9AD3FA;
+    position: absolute;
+    top: 0;
+}
+
+.navbar p ,.navbar span{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.navbar p{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    left: 40%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar p:hover,.navbar span:hover{
+    background-color: #78E2AA;
+}
+
+.page{
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    min-width: 70%;
+    min-height: 30%;
+}
+
+.page input{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: aliceblue;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.keyPosition{
+    display: none;
+    justify-content: center;
+    border-radius: 20px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.keyPosition img{
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .keyboard{
     padding: 10px 0;
     max-width: 50%;
     max-height: 50%;
-    background: burlywood;
+    background: #FFFFFF;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +96,7 @@ body{
     justify-content: center;
     width: 40px; 
     height: 40px;
-    background: brown;
+    /* background: brown; */
     margin: 3px;
     font-size: 15px;
     border-radius: 10px;
@@ -40,7 +107,7 @@ body{
 }
 
 .key:active{  
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 
@@ -50,7 +117,7 @@ body{
     justify-content: center;
     width: 75px;
     height: 40px;
-    background: teal;
+    background: #9AD3FA;
     margin: 3px;
     font-size: 15px;
     border-radius: 10px;
@@ -59,14 +126,14 @@ body{
 }
 
 .wide:active{  
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .wideCE{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: teal;
+    background: #9AD3FA;
     width: 80px;
     height: 40px;
     margin: 3px;
@@ -77,15 +144,15 @@ body{
 }
 
 .wideCE:active{  
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .wideS{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: teal;
-    width: 100px;
+    background: #9AD3FA;
+    width: 103px;
     height: 40px;
     margin: 3px;
     font-size: 15px;
@@ -95,12 +162,11 @@ body{
 }
 
 .wideS:active{  
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .extra-wide{
-    background: skyblue;
-    background: teal;
+    background: #9AD3FA;
     width: 350px;
     height: 40px;
     margin: 3px;
@@ -111,5 +177,29 @@ body{
 }
 
 .extra-wide:active{  
-  transform: scale(0.95);
+  transform: scale(0.9);
+}
+
+.blue{
+    background: #9AD3FA;
+}
+
+.sky{
+    background: #63E3FF;
+}
+
+.green{
+    background: #78E2AA;
+}
+
+.pink{
+    background: #F69EC4;
+}
+
+.brown{
+background: #FFC07E;
+}
+
+.yellow{
+    background: #FFEF7E;
 }
