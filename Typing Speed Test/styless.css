@@ -48,7 +48,7 @@ body{
 .page{
     margin-top: 100px;
     border-radius: 20px;
-    background-color: aliceblue;
+    background: transparent;
     min-width: 70%;
     min-height: 30%;
 }
@@ -57,11 +57,31 @@ body{
     outline: none;
     border: none;
     border-radius: 20px;
-    background-color: aliceblue;
+    background: transparent;
     min-width: 100%;
     min-height: 100%;
     font-size: 40px;
     padding: 20px;
+    text-align: start;
+    z-index: 1;
+}
+
+.page span{     
+    /* outline: none;
+    border: none; */
+    z-index: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: #A2A2A2;
+    max-width: 70%;
+    max-height: 30%;
+    font-size: 40px;
+    padding: 20px;
+    position: absolute;
+    over
+
 }
 
 .keyPosition{
