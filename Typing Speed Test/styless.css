@@ -46,41 +46,61 @@ body{
 }
 
 .page{
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     border-radius: 20px;
-    background: transparent;
-    min-width: 70%;
-    min-height: 30%;
+    background: #F69EC4;
+    max-width: 60%;
+    min-height: 50%;
+    position: relative;
+    padding: 10px;
 }
 
-.page input{
+.page label{
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 10px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.page textarea{
+    margin-top: 20px;
     outline: none;
     border: none;
     border-radius: 20px;
-    background: transparent;
+    background: #78E2AA;
     min-width: 100%;
-    min-height: 100%;
-    font-size: 40px;
-    padding: 20px;
+    min-height: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 10px;
     text-align: start;
-    z-index: 1;
 }
 
-.page span{     
-    /* outline: none;
-    border: none; */
-    z-index: 0;
-    overflow: hidden;
-    overflow-y: scroll;
-    border-radius: 20px;
-    background-color: aliceblue;
-    color: #A2A2A2;
-    max-width: 70%;
-    max-height: 30%;
-    font-size: 40px;
-    padding: 20px;
-    position: absolute;
+.page textarea::-webkit-scrollbar{
+    display: none;
 }
+
+.btn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.btn button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 12%;
+    height: 12%;
+    border-radius: 5px;
+}
+
 
 .keyPosition{
     display: none;
@@ -165,6 +185,7 @@ body{
   transform: scale(0.9);
 }
 
+
 .wideS{
     display: flex;
     align-items: center;
@@ -220,4 +241,18 @@ background: #FFC07E;
 
 .yellow{
     background: #FFEF7E;
+}
+
+#resultPage{
+    display: none;
+    justify-content: space-evenly;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 10px;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }

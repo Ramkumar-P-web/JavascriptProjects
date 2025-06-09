@@ -7,28 +7,23 @@
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-        <div class="navbar">
-            <p>Typing Tutor</p>
-            <span>Home</span>
-            <span>Lessons</span>
-            <span>Theme</span>
-        </div>
         <div class="page">
-            <span id="para">Web development now includes powerful frameworks and libraries. The future of tech includes quantum computing and edge AI. Cybersecurity threats are increasing, requiring advanced defenses. E-commerce continues to grow with new payment technologies. Digital marketing strategies depend heavily on user data analysis.</span>
-            <input type="text" name="typingArea" id="typingArea" title="typingArea">
-        </div>
-        <div class="resultPage" style="display: none;">
+            <label id="words" for="textarea">Web development now includes powerful frameworks and libraries. The future of tech includes quantum computing and edge AI. Cybersecurity threats are increasing, requiring advanced defenses. E-commerce continues to grow with new payment technologies. Digital marketing strategies depend heavily on user data analysis.</label>
+            <textarea name="textarea" id="textarea"></textarea>
+            <div class="btn"><span>Click Enter button to submit test.</span><button type="submit" id="submit">Submit Test</button></div>
+            <div id="resultPage">
             <div>
                 <p>Typing Test Complete!</p>
                 <div>
-                    <p></p>
+                    <p id="wpmResult"></p>
                     <p>WPM</p>
                 </div>
                 <div>
-                    <p></p>
+                    <p id="Accuracy"></p>
                     <p>Accuracy</p>
                 </div>
             </div>
+        </div>
         </div>
         <div class="keyPosition">
             <img src="0_kX36XAFY5V8NNS75.png" alt="keyPosition">
@@ -61,7 +56,7 @@
             <span class="key green" data-key="P"><i>P</i></span>
             <span class="key green" data-key="["><i>[</i></span>
             <span class="key green" data-key="]"><i>]</i></span>
-            <span class="key blue" data-key="\\"><i>\</i></span>
+            <span class="key blue" data-key="\"><i>\</i></span>
             <span class="wideCE" data-key="caps"><i>CAPS</i></span>
             <span class="key green" data-key="A"><i>A</i></span>
             <span class="key sky" data-key="S"><i>S</i></span>
@@ -93,4 +88,5 @@
         </div>
     
 </body>
+<script src="script.js"></script>
 </html>
