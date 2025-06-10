@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333333;
+}
+
+.calender{
+    width: 400px;
+    /* height: 300px; */
+    border-radius: 10px;
+    background: #111111 ;
+    box-shadow: 0 0 30px #222222;
+    color: #fff;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 25px;
+    color: orangered;
+}
+
+.month-year{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.weekdays, .days{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: space-evenly; */
+}
+
+.weekdays div, .days div{
+    width: 14.28%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.days{
+    height: 240px;
+}
+
+.days div{
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.days div:hover{
+    background-color: white;
+    color: orangered;
+}
+
+.today{
+    background-color:orangered ;
+    color: white;
+}
+
+.fade{
+    color: #555;
+}
