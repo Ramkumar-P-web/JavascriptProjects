@@ -69,10 +69,18 @@
     font-size: 18px;
 }
 
-.notesContainer p img{
+.deleteBtn{
     position: absolute;
     bottom: 10px;
     right: 10px;
     cursor: pointer;
     width: 30px;
 }
+
+ .saveBtn{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+ }
